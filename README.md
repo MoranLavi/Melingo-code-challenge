@@ -1,4 +1,4 @@
-# FastAPI App
+# Melingo Code Challenge 
 This is a web application that allows users to search for examples of a given word and receive a list of examples in response. The frontend is built with React, and the backend is built with FastAPI and a custom database class.
 
 ## Features
