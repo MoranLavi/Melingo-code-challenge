@@ -10,7 +10,7 @@ This is a web application that allows users to search for examples of a given wo
 ## Getting Started
 1. Clone the repository:
 ```
-git clone https://github.com/[USERNAME]/fastapi-app.git
+git clone https://github.com/MoranLavi/Melingo-code-challenge.git
 ```
 2. Install the dependencies:
 ```
