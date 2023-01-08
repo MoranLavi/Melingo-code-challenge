@@ -35,6 +35,7 @@ The server will be available at http://localhost:8000.
 ```
 npm start
 ```
+make sure that the client server is running on port 3000
  
 
 ## Dependencies
