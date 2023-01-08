@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# FastAPI App
+This is a web application that allows users to search for examples of a given word and receive a list of examples in response. The frontend is built with React, and the backend is built with FastAPI and a custom database class.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
+* Uses FastAPI as the web framework
+* Connects to a database of words and examples
+* Enables CORS (Cross-Origin Resource Sharing) to allow for communication between the backend and frontend
+* Handles errors and returns appropriate HTTP status codes and error messages
 
-## Available Scripts
+## Getting Started
+1. Clone the repository:
+```
+git clone https://github.com/[USERNAME]/fastapi-app.git
+```
+2. Install the dependencies:
+```
+pip install fastapi uvicorn
+```
+3. Install the dependencies for the frontend:
+```
+cd frontend
+npm install
+```
+4. Run the app:
+```
+cd my-app\src\server
+uvicorn main:app --port 8000 --reload
+```
+The server will be available at http://localhost:8000.
 
-In the project directory, you can run:
 
-### `npm start`
+5. Test the endpoint by sending a GET request to http://localhost:8000/examples?entry=[WORD], replacing [WORD] with the word you want to search for. You should receive a list of examples in the response.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+6. To start the frontend in development mode, with live reloading, run:
+```
+npm start
+```
+ 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Dependencies
+### Backend
+* FastAPI
+* uvicorn (for development server)
+### Frontend
+* react
+* axios
+* @material-ui/core
