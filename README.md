@@ -18,7 +18,7 @@ pip install fastapi uvicorn
 ```
 3. Install the dependencies for the frontend:
 ```
-cd frontend
+cd client
 npm install
 ```
 4. Run the app:
